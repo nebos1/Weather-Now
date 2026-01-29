@@ -1,0 +1,352 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather Now</title>
+        <meta name="description" content="Real-time weather app powered by Open-Meteo" />
+
+        <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico" />
+        <link rel="stylesheet" href="./styles/main.css" />
+    </head>
+
+    <body>
+        <div id="page">
+
+            <header id="header">
+                <div id="brand">
+                    <img id="logo" src="./img/logo/logo.png" alt="Weather Now logo" />
+
+                    <div id="text-container">
+                        <h1 id="title">Weather Now</h1>
+                        <p id="sub-title">Real-time weather and forecast</p>
+                    </div>
+                </div>
+
+                <button id="use-loaction-button" type="button"> Use my location </button>
+                <button id="celsium-farenheit-button" type="button" > °C </button>
+            </header>
+
+            <main id="main">
+
+                <section id="search-section" aria-label="Search city">
+                    <input
+                        id="search-bar"
+                        type="text"
+                        placeholder="Search city (example: Sofia, Paris, Tokyo)"
+                        autocomplete="off"
+                    />
+                    <button id="search-button" type="button">Search</button>
+
+                    <div id="city-dropdown" hidden></div>
+                </section>
+
+                <section id="hourly-card" aria-label="Next 24 hours forecast">
+                    <div id="hourly-head">
+                        <div id="hourly-title">Next 24 hours:</div>
+                        <div id="hourly-label">Metric (°C, km/h)</div>
+                    </div>
+
+                    <div id="hourly-indicator" aria-hidden="true">
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                        <div class="hour">
+                            <div class="time"></div>
+                            <div class="degrees"></div>
+                            <div class="precipitation"></div>
+                            <div class="windy"></div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="current-location-weather-card" aria-label="Current weather">
+                    <div id="location">
+                        <div id="place-wrap">
+                            <div id="place"></div>
+                            <div id="updated"></div>
+                        </div>
+
+                        <div id="status">Live</div>
+                    </div>
+
+                    <div id="place-information">
+                        <div id="temperature">
+                            <img id="icon" alt="weather-icon"/>
+                            <div id="temp"></div>
+                        </div>
+
+                        <div id="additional-information">
+                            <div id="weather-condition"></div>
+                            <div id="feels-like"></div>
+
+                            <div id="more-info-boxes">
+                                <div class="more-info">
+                                    <div class="more-info-name">Humidity</div>
+                                    <div class="more-info-value" id="humidity"></div>
+                            
+                                </div>
+
+                                <div class="more-info">
+                                    <div class="more-info-name">Wind</div>
+                                    <div class="more-info-value" id="wind"></div>
+                                </div>
+
+                                <div class="more-info">
+                                    <div class="more-info-name">Pressure</div>
+                                    <div class="more-info-value" id="pressure"></div>
+                                </div>
+
+                                <div class="more-info">
+                                    <div class="more-info-name">Precipitation</div>
+                                    <div class="more-info-value" id="precip"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="footer-info">
+                        <div id="last-update"></div>
+                        <div id="coords"></div>
+                    </div>
+                </section>
+
+                <section id="seven-day-forecast" aria-label="7 day forecast">
+                    <div id="daily-head">
+                        <div id="daily-title">7-day forecast</div>
+                        <div id="daily-subtitle">Next 7 days</div>
+                        <div id="days">
+                            <div id="daily-label">
+
+                                <div id="monday">
+                                    <div class="day-information">
+                                        <div class="day-name-and-date"></div>
+                                        <div class="day-weather-sunrise-sunset"></div>
+                                    </div>
+                                    <div class="min-max-temperature"></div>
+                                </div>
+
+                                <div id="tuesday">
+                                    <div class="day-information">
+                                        <div class="day-name-and-date"></div>
+                                        <div class="day-weather-sunrise-sunset"></div>
+                                    </div>
+                                    <div class="min-max-temperature"></div>
+                                </div>
+
+                                <div id="wednesday">
+                                    <div class="day-information">
+                                        <div class="day-name-and-date"></div>
+                                        <div class="day-weather-sunrise-sunset"></div>
+                                    </div>
+                                    <div class="min-max-temperature"></div>
+                                </div>
+
+                                <div id="thursday">
+                                    <div class="day-information">
+                                        <div class="day-name-and-date"></div>
+                                        <div class="day-weather-sunrise-sunset"></div>
+                                    </div>
+                                    <div class="min-max-temperature"></div>
+                                </div>
+
+                                <div id="friday">
+                                    <div class="day-information">
+                                        <div class="day-name-and-date"></div>
+                                        <div class="day-weather-sunrise-sunset"></div>
+                                    </div>
+                                    <div class="min-max-temperature"></div>
+                                </div>
+
+                                <div id="saturday">
+                                    <div class="day-information">
+                                        <div class="day-name-and-date"></div>
+                                        <div class="day-weather-sunrise-sunset"></div>
+                                    </div>
+                                    <div class="min-max-temperature"></div>
+                                </div>
+
+                                <div id="sunday">
+                                    <div class="day-information">
+                                        <div class="day-name-and-date"></div>
+                                        <div class="day-weather-sunrise-sunset"></div>
+                                    </div>
+                                    <div class="min-max-temperature"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <button id="info-toggle" type="button" aria-expanded="false" aria-controls="information-people">
+                <img id="info-toggle-arrow" src="./img/arrow/arrow_down.png" alt="toggle" />
+            </button>
+            <footer id="information-people" class="collapsed">
+            <p><strong>Important note:</strong> This app depends on external API's/services, so occasional missing or delayed data is possible.</p>
+            <ul>
+                <li><strong>Rate limits / fair-use:</strong> Open-Meteo and Nominatim may reduce the requests when too many are sent in a short period of time.</li>
+                <li><strong>Non-commercial access:</strong> This app uses free/non-commercial endpoints. Heavy usage requires a paid/pro plan (Open-Meteo) or will be limited by service policies.</li>
+                <li><strong>Too many rapid actions:</strong> If the user clicks buttons repeatedly (unit switch, search, “use my location”), requests may overlap and responses may arrive late or fail. Wait a few seconds between actions.</li>
+                <li><strong>Temporary service issues:</strong> External services can be slow, unavailable, or return errors.</li>
+                <li><strong>Geolocation limitations:</strong> Location access may be blocked/denied by default because of the browser, OS permissions, or something else, which may prevent “Use my location” from working.</li>
+                <li><strong>Reverse geocoding accuracy:</strong> Nominatim may return incomplete or unexpected place names depending on the coordinates and available map data.</li>
+                <li><strong>Network problems:</strong> Slow internet, offline mode or VPN/proxy issues can interrupt API calls.</li>
+                <li><strong>Data gaps:</strong> Some fields may be missing in the API response for certain locations/times, so the UI may show placeholders, like "Unexpected".</li>
+                <li><strong>Device compatibility:</strong>This app is developed for desktop usage and may not display correctly or function as intended on mobile devices or smaller screens. Recomended usage is between 90%-110% of browser viewport and between 24'-32', but any other desktop resolution can be displayed well.</li>
+                <li id="api-links-info">
+                    For more information about both API's, visit 
+                    <a href="https://open-meteo.com" target="blank">Open-Meteo</a> and 
+                    <a href="https://nominatim.org" target="blank">Nominatim</a>.
+                </li>            
+            </ul>
+
+            <p>If something fails to load, please wait a moment,or refresh the page or try again a bit later.</p>
+            <p>All rights reserved!</p>
+            <a id="github-profile-link" href="https://github.com/nebos1" target="blank" aria-label="GitHub profile">
+                <img id="github-icon" src="./img/github/github_logo.png" alt="GitHub logo" />
+            </a>
+            </footer>
+
+        </div>
+
+        <script src="./scripts/main.js"></script>
+    </body>
+    </html>
