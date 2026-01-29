@@ -7,6 +7,7 @@ A lightweight web application for *current weather + forecast* (24 hours and 7 d
 ✨ Features:
 
 
+
 ✔️*Current weather* → temperature, feels like, humidity, wind, pressure, precipitation, icon according to `weather_code`
 
 
@@ -30,8 +31,12 @@ A lightweight web application for *current weather + forecast* (24 hours and 7 d
 
 ⚙️ Technologies:
 ➜HTML
+
 ➜CSS
+
 ➜JavaScript
 
+
 👤Author:
+
 Nikolay Todorov (nebos1)
