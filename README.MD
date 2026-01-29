@@ -30,6 +30,7 @@ A lightweight web application for *current weather + forecast* (24 hours and 7 d
 
 
 ⚙️ Technologies:
+
 ➜HTML
 
 ➜CSS
